@@ -1,0 +1,147 @@
+.stock {
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  &__title {
+    position: relative;
+    margin-bottom: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 3px;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: lighten($color_red, 30%);
+    }
+  }
+
+  &__description {
+    margin-bottom: 100px;
+    padding: 25px;
+    background-color: $color_grey;
+  }  
+    
+  &__description-left {
+
+    & h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    & p {
+      margin: 0;
+      font-family: $font_2;
+      font-size: 18px;
+    }  
+  }
+
+  &__description-right {
+    
+    & p {
+      margin: 0;
+      padding-bottom: 10px;
+      font-family: $font_2;
+      font-size: 18px;
+    }  
+
+    & strong {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  
+    & span {
+      font-size: 24px;
+      font-weight: 700;
+      color: $color_red;
+    }
+
+    & a {
+      font-family: $font_2;
+      font-size: 18px;
+      font-weight: 700;
+      color: $color_dark;
+      outline: none;
+    }
+
+    & button {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background-color: $color_red;
+      border-radius: 35px;
+      text-align: center;
+      border: none;
+      font-family: ToyotaDisplay,Arial,sans-serif;
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+
+      &:hover {
+        box-shadow: 0 4px 16px 0 $color_red;
+      }
+    }
+  }  
+
+  &__button {
+    position: relative;
+    display: block;
+    width: 110px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: $color_red;
+    border-bottom: 2px solid $color_red;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 19px;
+      height: 10px;
+      top: 10px;
+      right: -20px;
+      background-image: url('../img/down-arrow.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:hover {
+      color: lighten($color_red, 30%);
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .stock {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    &__description {
+      margin-bottom: 40px;
+    }
+
+    &__description-right {
+      & p {
+        font-size: 16px;
+      }
+    }
+  }  
+}
+
+@media (max-width: 991px) {
+  .stock {
+    padding-top: 30px;
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.offer {
+  padding-top: 35px;
+  padding-bottom: 70px;
+  background-color: $color_grey;
+
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 3px;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: lighten($color_red, 30%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-family: $font_2;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__form {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  &__form-input {
+    display: inline-block;
+    width: 450px;
+    padding: 18px 30px;
+    font-size: 16px;
+    color: $color_dark;
+    border: none;
+    border-radius: 30px;
+    box-shadow:  0 2px 15px 0px darken($color_grey, 15%);
+    outline: none;
+
+    &:hover {
+      box-shadow:  0 4px 15px 5px darken($color_grey, 20%);
+    }
+
+    &:focus {
+      background-color: darken($color_grey, 5%);
+    }
+  }
+
+  & button {
+    display: inline-block;
+    width: 230px;
+    margin-left: -50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    color: $color_light;
+    background-color: $color_red;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+
+    &:hover {
+      color: $color_light;
+      box-shadow:  0 4px 16px 0px $color_red;
+      text-decoration: none;
+    }
+  }
+}
+
+::placeholder {
+  color: lighten($color_dark, 50%);
+}
+
+@media (max-width: 767px) {
+  .offer {
+    &__form-input {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    & button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

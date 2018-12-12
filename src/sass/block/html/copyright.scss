@@ -1,0 +1,13 @@
+.copyright {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  background-color: darken($color_grey, 10%);
+
+  &__text {
+    margin: 0;
+    font-family: $font_2;
+    font-size: 14px;
+    line-height: 22px;
+    color: lighten($color_dark, 50%);
+  }
+}
