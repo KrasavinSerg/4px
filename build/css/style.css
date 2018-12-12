@@ -6653,7 +6653,6 @@ img {
 }
 
 .promo__title {
-  position: relative;
   width: 315px;
   margin-left: auto;
   margin-bottom: 120px;
@@ -10392,8 +10391,9 @@ img {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .promo__title {
+    margin: 0 auto 50px;
     width: 280px;
     padding-right: 18px;
   }
