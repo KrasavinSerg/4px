@@ -176,3 +176,20 @@
     }  
   }
 }
+
+@media (max-width: 576px) {
+  .promo {
+
+    &__title {
+      width: 280px;
+      padding-right: 18px;
+    }  
+
+    &__discription-item {
+  
+      & span {
+        font-size: 22px;
+      }
+    }
+  }
+}
