@@ -13,11 +13,11 @@
     &::after {
       position: absolute;
       content: "";
-      width: 25px;
-      height: 24px;
-      top: -2px;
+      width: 20px;
+      height: 22px;
+      top: 0;
       left: 135px;
-      background-image: url('../img/down-arrow.png');
+      background-image: url('../img/down-arrow.svg');
       background-repeat: no-repeat;
       background-position: center;
       transform: rotate(180deg);

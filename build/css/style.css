@@ -6701,7 +6701,7 @@ img {
   height: 24px;
   top: -4px;
   left: -34px;
-  background-image: url("../img/rudder.png");
+  background-image: url("../img/rudder.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -6895,7 +6895,6 @@ img {
   border-radius: 35px;
   text-align: center;
   border: none;
-  font-family: ToyotaDisplay,Arial,sans-serif;
   color: #fff;
   cursor: pointer;
   outline: none;
@@ -6924,11 +6923,11 @@ img {
 .stock__button::after {
   position: absolute;
   content: "";
-  width: 19px;
-  height: 10px;
-  top: 10px;
+  width: 22px;
+  height: 18px;
+  top: 6px;
   right: -20px;
-  background-image: url("../img/down-arrow.png");
+  background-image: url("../img/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -7066,10 +7065,8 @@ img {
 }
 
 .contact__map {
-  display: block;
   width: 100%;
   height: 400px;
-  border: none;
 }
 
 .condition {
@@ -7089,11 +7086,11 @@ img {
 .condition__title::after {
   position: absolute;
   content: "";
-  width: 25px;
-  height: 24px;
-  top: -2px;
+  width: 20px;
+  height: 22px;
+  top: 0;
   left: 135px;
-  background-image: url("../img/down-arrow.png");
+  background-image: url("../img/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transform: rotate(180deg);
@@ -10359,6 +10356,9 @@ img {
     margin-bottom: 40px;
   }
   .stock__description-right p {
+    font-size: 16px;
+  }
+  .stock__description-right a {
     font-size: 16px;
   }
 }

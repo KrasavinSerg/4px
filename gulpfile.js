@@ -110,7 +110,7 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "style",
-    // "images",
+    "images",
     // "sprite",
     fn
   );
