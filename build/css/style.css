@@ -7069,21 +7069,22 @@ img {
   height: 400px;
 }
 
-.condition {
+.regulation {
   padding-top: 150px;
   padding-bottom: 20px;
   background-color: #f0f0f0;
 }
 
-.condition__title {
+.regulation__title {
   margin-bottom: 25px;
   position: relative;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
   color: #e50000;
 }
 
-.condition__title::after {
+.regulation__title::after {
   position: absolute;
   content: "";
   width: 20px;
@@ -7093,15 +7094,23 @@ img {
   background-image: url("../img/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
-.condition__text {
+.regulation__title:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.regulation__text {
+  display: none;
   margin-bottom: 30px;
   font-family: ToyotaText, Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;
+}
+
+.regulation__open {
+  display: block;
 }
 
 .copyright {
@@ -7154,6 +7163,168 @@ img {
   border-left: 2px solid #ffffff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.modal1__title {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal1__title::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 3px;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ff7f7f;
+}
+
+.modal1__text {
+  margin-bottom: 36px;
+  font-family: ToyotaText, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal1__wrapper {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.modal1__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px 20px;
+  font-family: ToyotaText, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  border-style: none;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 3px 0px #cac9c9;
+          box-shadow: inset 0px 0px 3px 0px #cac9c9;
+  outline: none;
+}
+
+.modal1__input:hover {
+  background-color: #ffe5e5;
+}
+
+.modal1__input:focus {
+  background-color: #efefef;
+}
+
+.modal1__input_car {
+  display: inline-block;
+  width: 60%;
+  margin-right: 10px;
+}
+
+.modal1__input_year {
+  display: inline-block;
+  width: 36%;
+}
+
+.modal1__btn {
+  display: block;
+  width: 240px;
+  margin: 40px auto 20px;
+  padding: 16px;
+  font-family: ToyotaDisplay, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #e50000;
+  border-radius: 35px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.modal1__btn:hover {
+  -webkit-box-shadow: 0 4px 16px 0px #e50000;
+          box-shadow: 0 4px 16px 0px #e50000;
+}
+
+.modal1 ::-webkit-input-placeholder {
+  font-family: ToyotaText, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b0b0;
+}
+
+.modal1 :-ms-input-placeholder {
+  font-family: ToyotaText, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b0b0;
+}
+
+.modal1 ::-ms-input-placeholder {
+  font-family: ToyotaText, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b0b0;
+}
+
+.modal1 ::placeholder {
+  font-family: ToyotaText, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b0b0b0;
+}
+
+.modal1__label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal1__label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 4px;
+  border: 1px solid #e50000;
+}
+
+.modal1__label a {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+.modal1__label a:visited {
+  color: #ffb2b2;
+}
+
+.modal1__label a:hover {
+  color: #333333;
+}
+
+.modal1__checkbox {
+  display: none;
+}
+
+.modal1__checkbox:checked ~ .modal1__label::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 576px) {
@@ -10168,14 +10339,12 @@ img {
   }
 }
 
-@media (max-width: 767px) {
-  .offer__form-input {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .offer button {
+@media (max-width: 576px) {
+  .modal1 {
     display: block;
-    margin: 0 auto;
+  }
+  .modal1__input_car, .modal1__input_year {
+    width: 100%;
   }
 }
 
@@ -10399,6 +10568,17 @@ img {
   }
   .promo__discription-item span {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .offer__form-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .offer button {
+    display: block;
+    margin: 0 auto;
   }
 }
 

@@ -1,0 +1,148 @@
+.modal1 {
+
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 3px;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: lighten($color_red, 30%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 36px;
+    font-family: $font_2;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    font-family: $font_2;
+    font-size: 14px;
+    line-height: 14px;
+    border-style: none;
+    border: 1px solid darken($color_grey, 25%);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px 0px rgb(202, 201, 201);
+    outline: none;
+
+    &:hover {
+      background-color: lighten($color_red, 50%);
+    }
+
+    &:focus {
+      background-color: darken($color_grey, 0.5%);
+    }
+
+    &_car {
+      display: inline-block;
+      width: 60%;
+      margin-right: 10px;
+    }
+    
+    &_year {
+      display: inline-block;
+      width: 36%;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 240px;
+    margin: 40px auto 20px;
+    padding: 16px;
+    font-family: $font_1;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color_light;
+    background-color: $color_red;
+    border-radius: 35px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+
+    &:hover {
+      box-shadow:  0 4px 16px 0px $color_red;
+    }
+  }  
+
+  ::placeholder {
+    font-family: $font_2;
+    font-size: 14px;
+    line-height: 21px;
+    color: darken($color_grey, 25%);
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      left: 0;
+      top: 4px;
+      border: 1px solid $color_red;
+    }
+
+    & a {
+      color: darken($color_grey, 25%);
+      text-decoration: underline;
+
+      &:visited {
+        color: lighten($color_red, 40%);
+      }
+
+      &:hover {
+        color: $color_dark;
+      }
+    } 
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ &__label {
+    &::before {
+      background-image: url('../img/tick.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .modal1 {
+    display: block;
+    &__input_car, &__input_year {
+      width: 100%;
+    }
+  }  
+}
