@@ -127,6 +127,10 @@
     outline: none;
     user-select: none;
 
+    &:focus {
+      background-color: darken($color_red, 10%);
+    }
+    
     &:hover {
       box-shadow: 0 4px 16px 0 $color_red;
     }

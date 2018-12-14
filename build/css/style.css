@@ -6561,6 +6561,10 @@ img {
           user-select: none;
 }
 
+.header__nav-link:focus {
+  background-color: #ffb2b2;
+}
+
 .header__nav-link_active {
   color: #ffffff;
   background-color: #e50000;
@@ -6729,6 +6733,10 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.promo button:focus {
+  background-color: #b20000;
 }
 
 .promo button:hover {
@@ -6908,6 +6916,10 @@ img {
           user-select: none;
 }
 
+.stock__description-right button:focus {
+  background-color: #b20000;
+}
+
 .stock__description-right button:hover {
   -webkit-box-shadow: 0 4px 16px 0 #e50000;
           box-shadow: 0 4px 16px 0 #e50000;
@@ -7021,6 +7033,10 @@ img {
           user-select: none;
 }
 
+.offer button:focus {
+  background-color: #b20000;
+}
+
 .offer button:hover {
   color: #ffffff;
   -webkit-box-shadow: 0 4px 16px 0 #e50000;
@@ -7100,11 +7116,6 @@ img {
   background-position: center;
 }
 
-.regulation__title:hover::after {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .regulation__text {
   display: none;
   margin-bottom: 26px;
@@ -7150,6 +7161,10 @@ img {
   -webkit-box-shadow: 0 2px 15px 2px #a4a4a4;
           box-shadow: 0 2px 15px 2px #a4a4a4;
   outline: none;
+}
+
+.footer__btn-up:focus {
+  background-color: #b20000;
 }
 
 .footer__btn-up:hover {

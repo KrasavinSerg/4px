@@ -21,6 +21,10 @@
       outline: none;
       user-select: none;
 
+      &:focus {
+        background-color: lighten($color_red, 40%);
+      }
+
       &_active {
         color: $color_light;
         background-color: $color_red;
