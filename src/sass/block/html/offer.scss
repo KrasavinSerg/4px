@@ -12,7 +12,7 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       width: 80px;
       height: 3px;
       bottom: -10px;
@@ -44,11 +44,11 @@
     color: $color_dark;
     border: none;
     border-radius: 30px;
-    box-shadow:  0 2px 15px 0px darken($color_grey, 15%);
+    box-shadow: 0 2px 15px 0 darken($color_grey, 15%);
     outline: none;
 
     &:hover {
-      box-shadow:  0 4px 15px 5px darken($color_grey, 20%);
+      box-shadow: 0 4px 15px 5px darken($color_grey, 20%);
     }
 
     &:focus {
@@ -73,7 +73,7 @@
 
     &:hover {
       color: $color_light;
-      box-shadow:  0 4px 16px 0px $color_red;
+      box-shadow: 0 4px 16px 0 $color_red;
       text-decoration: none;
     }
   }

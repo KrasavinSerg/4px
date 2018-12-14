@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
   z-index: 10;
 
   &__nav {
@@ -22,7 +22,7 @@
       user-select: none;
 
       &_active {
-        color: $color_light;  
+        color: $color_light;
         background-color: $color_red;
       }   
 
@@ -43,7 +43,7 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       width: 20px;
       height: 2px;
       background-color: $color_red;

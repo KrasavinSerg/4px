@@ -9,10 +9,10 @@
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: $color_red;  
+    background-color: $color_red;
     border: none;
     border-radius: 3px;
-    box-shadow:  0 2px 15px 2px darken($color_grey, 30%);
+    box-shadow: 0 2px 15px 2px darken($color_grey, 30%);
     outline: none;
 
     &:hover {
@@ -21,7 +21,7 @@
 
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       width: 16px;
       height: 16px;
       left: 17px;
