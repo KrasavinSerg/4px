@@ -1,6 +1,6 @@
 .stock {
   padding-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 
   &__title {
     position: relative;
@@ -14,7 +14,7 @@
       content: "";
       width: 80px;
       height: 3px;
-      bottom: -20px;
+      bottom: -10px;
       left: 50%;
       transform: translateX(-50%);
       background-color: lighten($color_red, 30%);
@@ -22,7 +22,7 @@
   }
 
   &__description {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 25px;
     background-color: $color_grey;
   }  

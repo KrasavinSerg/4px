@@ -1,11 +1,11 @@
 .offer {
-  padding-top: 35px;
+  padding-top: 32px;
   padding-bottom: 70px;
   background-color: $color_grey;
 
   &__title {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
@@ -15,7 +15,7 @@
       content: "";
       width: 80px;
       height: 3px;
-      bottom: -20px;
+      bottom: -10px;
       left: 50%;
       transform: translateX(-50%);
       background-color: lighten($color_red, 30%);
@@ -23,7 +23,7 @@
   }
 
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     font-family: $font_2;
     font-size: 24px;
     line-height: 24px;
@@ -39,7 +39,7 @@
   &__form-input {
     display: inline-block;
     width: 450px;
-    padding: 18px 30px;
+    padding: 15px 30px;
     font-size: 16px;
     color: $color_dark;
     border: none;
@@ -60,8 +60,8 @@
     display: inline-block;
     width: 230px;
     margin-left: -50px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 16px;
     color: $color_light;
     background-color: $color_red;

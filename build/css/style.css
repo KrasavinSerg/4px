@@ -6595,7 +6595,7 @@ img {
 }
 
 .promo {
-  padding-top: 80px;
+  padding-top: 86px;
   padding-bottom: 60px;
   background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
@@ -6604,11 +6604,12 @@ img {
 }
 
 .promo__img {
+  margin-top: -25px;
   margin-left: -30px;
 }
 
 .promo__text {
-  margin: -20px 0 60px 0;
+  margin: -20px 0 65px 0;
   font-family: ToyotaText, Arial, sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -6617,6 +6618,10 @@ img {
 
 .promo__discription-item {
   margin-bottom: 40px;
+}
+
+.promo__discription-item:last-child {
+  margin-bottom: 28px;
 }
 
 .promo__discription-item p {
@@ -6656,7 +6661,7 @@ img {
   width: 315px;
   margin-left: auto;
   margin-bottom: 120px;
-  padding: 13px 45px;
+  padding: 10px 45px;
   background: #d80000;
   background: -webkit-gradient(linear, left top, right top, from(#d80000), color-stop(49%, #b30000));
   background: linear-gradient(90deg, #d80000 0%, #b30000 49%);
@@ -6709,8 +6714,8 @@ img {
 .promo button {
   display: block;
   width: 250px;
-  margin-bottom: 15px;
-  padding: 16px;
+  margin-bottom: 10px;
+  padding: 15px;
   font-family: ToyotaDisplay, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -6763,7 +6768,7 @@ img {
 
 .feature__title {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 74px;
   font-size: 18px;
   line-height: 24px;
@@ -6821,7 +6826,7 @@ img {
 
 .stock {
   padding-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 .stock__title {
@@ -6837,7 +6842,7 @@ img {
   content: "";
   width: 80px;
   height: 3px;
-  bottom: -20px;
+  bottom: -10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -6845,7 +6850,7 @@ img {
 }
 
 .stock__description {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 25px;
   background-color: #f0f0f0;
 }
@@ -6937,14 +6942,14 @@ img {
 }
 
 .offer {
-  padding-top: 35px;
+  padding-top: 32px;
   padding-bottom: 70px;
   background-color: #f0f0f0;
 }
 
 .offer__title {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -6955,7 +6960,7 @@ img {
   content: "";
   width: 80px;
   height: 3px;
-  bottom: -20px;
+  bottom: -10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -6963,7 +6968,7 @@ img {
 }
 
 .offer__text {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-family: ToyotaText, Arial, sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -6979,7 +6984,7 @@ img {
 .offer__form-input {
   display: inline-block;
   width: 450px;
-  padding: 18px 30px;
+  padding: 15px 30px;
   font-size: 16px;
   color: #333333;
   border: none;
@@ -7002,8 +7007,8 @@ img {
   display: inline-block;
   width: 230px;
   margin-left: -50px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 16px;
   color: #ffffff;
   background-color: #e50000;
@@ -7041,7 +7046,7 @@ img {
 }
 
 .contact {
-  padding-top: 90px;
+  padding-top: 85px;
 }
 
 .contact__title {
@@ -7057,7 +7062,7 @@ img {
   content: "";
   width: 80px;
   height: 3px;
-  bottom: -20px;
+  bottom: -15px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -7070,13 +7075,13 @@ img {
 }
 
 .regulation {
-  padding-top: 150px;
+  padding-top: 140px;
   padding-bottom: 20px;
   background-color: #f0f0f0;
 }
 
 .regulation__title {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   position: relative;
   font-size: 18px;
   font-weight: 700;
@@ -7103,7 +7108,7 @@ img {
 
 .regulation__text {
   display: none;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-family: ToyotaText, Arial, sans-serif;
   font-size: 14px;
   line-height: 22px;

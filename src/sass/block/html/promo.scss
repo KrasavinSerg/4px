@@ -1,5 +1,5 @@
 .promo {
-  padding-top: 80px;
+  padding-top: 86px;
   padding-bottom: 60px;
   background-image: url('../img/main-bg.jpg');
   background-repeat: no-repeat;
@@ -7,11 +7,12 @@
   background-position-y: -30px;
 
   &__img {
+    margin-top: -25px;
     margin-left: -30px;
   }
 
   &__text {
-    margin: -20px 0 60px 0;
+    margin: -20px 0 65px 0;
     font-family: $font_2;
     font-size: 24px;
     line-height: 24px;
@@ -20,6 +21,10 @@
 
   &__discription-item {
     margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 28px;
+    }
 
     & p {
       position: relative;
@@ -58,7 +63,7 @@
     width: 315px;
     margin-left: auto;
     margin-bottom: 120px;
-    padding: 13px 45px;
+    padding: 10px 45px;
     background: rgb(216,0,0);
     background: linear-gradient(90deg, rgba(216,0,0,1) 0%, rgba(179,0,0,1) 49%);
     transform: skewX(-15deg);
@@ -108,8 +113,8 @@
   & button {
     display: block;
     width: 250px;
-    margin-bottom: 15px;
-    padding: 16px;
+    margin-bottom: 10px;
+    padding: 15px;
     font-family: $font_1;
     font-size: 16px;
     line-height: 20px;
