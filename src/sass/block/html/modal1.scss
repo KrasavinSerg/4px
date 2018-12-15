@@ -80,8 +80,12 @@
     border: none;
     text-align: center;
     cursor: pointer;
-    outline: none;
     user-select: none;
+    outline: none;
+
+    &:focus {
+      background-color: darken($color_red, 10%);
+    }
 
     &:hover {
       box-shadow: 0 4px 16px 0 $color_red;
@@ -114,9 +118,14 @@
     & a {
       color: darken($color_grey, 25%);
       text-decoration: underline;
+      outline: none;
 
       &:visited {
         color: lighten($color_red, 40%);
+      }
+
+      &:focus {
+        color: darken($color_red, 10%);
       }
       
       &:hover {

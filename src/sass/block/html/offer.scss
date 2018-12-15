@@ -81,10 +81,10 @@
       text-decoration: none;
     }
   }
-}
 
-::placeholder {
-  color: lighten($color_dark, 50%);
+  ::placeholder {
+    color: lighten($color_dark, 50%);
+  }
 }
 
 @media (max-width: 767px) {

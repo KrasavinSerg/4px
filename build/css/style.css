@@ -7044,19 +7044,19 @@ img {
   text-decoration: none;
 }
 
-::-webkit-input-placeholder {
+.offer ::-webkit-input-placeholder {
   color: #b3b3b3;
 }
 
-:-ms-input-placeholder {
+.offer :-ms-input-placeholder {
   color: #b3b3b3;
 }
 
-::-ms-input-placeholder {
+.offer ::-ms-input-placeholder {
   color: #b3b3b3;
 }
 
-::placeholder {
+.offer ::placeholder {
   color: #b3b3b3;
 }
 
@@ -7266,11 +7266,15 @@ img {
   border: none;
   text-align: center;
   cursor: pointer;
-  outline: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  outline: none;
+}
+
+.modal1__btn:focus {
+  background-color: #b20000;
 }
 
 .modal1__btn:hover {
@@ -7326,10 +7330,15 @@ img {
 .modal1__label a {
   color: #b0b0b0;
   text-decoration: underline;
+  outline: none;
 }
 
 .modal1__label a:visited {
   color: #ffb2b2;
+}
+
+.modal1__label a:focus {
+  color: #b20000;
 }
 
 .modal1__label a:hover {
